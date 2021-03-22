@@ -1,4 +1,119 @@
-.container {
+
+.DestaqueBox {
+  padding-top: 70px;
+  background-color: #1B98E0;
+  overflow: hidden; 
+  height: 800px; 
+  min-width: 1200px;
+ 
+}
+
+.DestaqueEu {
+  
+  height: 100%;
+  float: left;
+}
+
+.DestaqueEu img {
+  height: 100%;
+}
+
+.DestaqueLamp {
+  
+  height: 100%;
+  float: left;
+}
+
+.DestaqueLamp img {
+  padding-left: 100px;
+  height: 50%; 
+  float: left;
+}
+
+.DestaqueTxt {
+  color: #fff;
+  padding-top: 200px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.DestaqueTxt h1 {
+  text-shadow: 10px 0px 10px #000000
+}
+
+.DestaqueTxt p {
+  padding-top: 80px; 
+  font-size: 40px;
+}
+
+.Menu {
+  background: #e8f1f2;
+  overflow:hidden;
+  padding-top: 15px ;
+  padding-bottom: 15px;
+  position: fixed;
+  min-width: 2000px;
+  border-bottom: 2px solid rgb(200, 200, 200);
+  
+}
+
+.MenuItens {
+  padding: 15px 30px 15px 30px;
+  font-size: 40px;
+  display:inline;
+  cursor: pointer;
+
+}
+
+.MenuItensIni {
+
+  padding: 15px 20px 15px 26%;
+  display:inline;
+
+}
+
+.MenuItens:hover{
+  background-color: #d9edff ;
+  transition: 0.2s;
+}
+
+.Desenv {
+  padding-top: 300px;
+  padding-bottom: 400px;
+  text-align: center;
+  font-size: 40px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Rodape{
+  border-top: 2px solid rgb(200, 200, 200);
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.Rodape p{
+  margin-bottom: 10px;
+}
+
+/* .container {
   min-height: 100vh;
   padding: 0 0.5rem;
   display: flex;
@@ -119,4 +234,4 @@
     width: 100%;
     flex-direction: column;
   }
-}
+} */

@@ -1,4 +1,29 @@
-import Head from 'next/head'
+import React from 'react'
+import Destaque from '../components/Destaque'
+import Estilos from '../styles/Home.module.css'
+
+function CorpoDaPag() {
+    return (
+      
+      <div >
+         <Destaque/>
+         
+         
+      </div>
+
+      
+
+    )
+}
+
+export default CorpoDaPag
+
+
+
+
+
+
+/* import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -63,3 +88,4 @@ export default function Home() {
     </div>
   )
 }
+ */
