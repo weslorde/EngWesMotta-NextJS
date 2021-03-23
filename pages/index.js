@@ -1,14 +1,28 @@
 import React from 'react'
-import Destaque from '../components/Destaque'
 import Estilos from '../styles/Home.module.css'
+import Destaque from '../components/Destaque'
+import Postagem from '../components/Postagem'
+
 
 function CorpoDaPag() {
     return (
       
       <div >
          <Destaque/>
-         
-         
+
+         <Postagem Titulo="Resumo" Imagem={"/InfoIcon.png"} 
+          Texto= "Tenho 25 anos, atualmente moro em São Paulo capital, mas sempre aberto a novas experiências em outros lugares 
+          (um de meus objetivos é futuramente trabalhar no exterior). Tenho facilidade em aprender e gosto por ensinar, já tive a oportunidade de 
+          dar aulas e foi pessoalmente bem recompensador. Sou movido por novos desafios e competições saudáveis, durante meus estudos e atuação 
+          descobri minha preferência pela área da eletrônica, principalmente quando se trata do desenvolvimento de PCB, mas ainda tenho muito o 
+          que aprender." />
+      
+         <Postagem Titulo="Proposta do Site" Imagem={"/Programar.png"} 
+          Texto="Desenvolver um projeto prático para auxiliar em meus estudos independentes de programação Web com o objetivo de aprender HTML, 
+          CSS e ReactJS aplicando no framework NextJS." />
+      
+
+      
       </div>
 
       

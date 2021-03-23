@@ -1,3 +1,28 @@
+/* Componente Cabecario */
+
+.Menu {
+  background: #e8f1f2;
+  overflow:hidden;
+  position: fixed;
+  width: 100%;
+  border-bottom: 2px solid rgb(200, 200, 200); 
+  padding-left: calc(50% - 339px);   /* Calculo para centralizar o Menu! 339px é a soma dos tamanho de cada item dividido por 2. */
+}
+
+.MenuItens {
+  padding: 15px 30px 15px 30px;
+  font-size: 35px;
+  cursor: pointer;
+  display: inline-block;
+
+}
+
+.MenuItens:hover{
+  background-color: #d9edff ;
+  transition: 0.2s;
+}
+
+/* Componente Destaque */
 
 .DestaqueBox {
   padding-top: 70px;
@@ -5,11 +30,9 @@
   overflow: hidden; 
   height: 800px; 
   min-width: 1200px;
- 
 }
 
-.DestaqueEu {
-  
+.DestaqueEu { 
   height: 100%;
   float: left;
 }
@@ -18,8 +41,7 @@
   height: 100%;
 }
 
-.DestaqueLamp {
-  
+.DestaqueLamp { 
   height: 100%;
   float: left;
 }
@@ -46,43 +68,45 @@
   font-size: 40px;
 }
 
-.Menu {
-  background: #e8f1f2;
-  overflow:hidden;
-  padding-top: 15px ;
-  padding-bottom: 15px;
-  position: fixed;
-  min-width: 2000px;
-  border-bottom: 2px solid rgb(200, 200, 200);
-  
-}
-
-.MenuItens {
-  padding: 15px 30px 15px 30px;
-  font-size: 40px;
-  display:inline;
-  cursor: pointer;
-
-}
-
-.MenuItensIni {
-
-  padding: 15px 20px 15px 26%;
-  display:inline;
-
-}
-
-.MenuItens:hover{
-  background-color: #d9edff ;
-  transition: 0.2s;
-}
-
 .Desenv {
   padding-top: 300px;
   padding-bottom: 400px;
   text-align: center;
   font-size: 40px;
+}
+
+/* Componente Postagem */
+
+.GradePostagem {
+  margin: 40px 20% 20px 20%;
+  border-bottom: 2px solid rgb(200, 200, 200);   
+}
+
+.PostagemTitulo{
+  padding-top: 10px;
+  text-align: center;
+}
+
+.PostagemConteudo{
+  overflow: hidden;
+  display:block;
+  margin-bottom: 30px;
   
+}
+
+.PostagemConteudo img{
+  margin-top: 40px;
+  height: 150px;
+  float: left;
+}
+
+.PostagemConteudo p{
+  margin-top: 40px;
+  margin-left: 250px;
+  text-align: justify;
+  font-size: 1.5rem;
+  overflow: hidden;
+  text-indent: 30px; 
 }
 
 
@@ -101,137 +125,31 @@
 
 
 
+
+
+/* Componente Rodape */
 
 .Rodape{
   border-top: 2px solid rgb(200, 200, 200);
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
+  background-color: #e8f1f2 ;
+}
+
+
+.RodapeRedes { /* Formato dos links de Redes Sociais */
+  display:inline-block;
+  margin: 10px 10px 20px 10px;
+  height: 40px;
+}
+
+.RodapeRedes img{
+  height: 100%;
+  cursor: pointer;
 }
 
 .Rodape p{
   margin-bottom: 10px;
 }
 
-/* .container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.main {
-  padding: 5rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer {
-  width: 100%;
-  height: 100px;
-  border-top: 1px solid #eaeaea;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer img {
-  margin-left: 0.5rem;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-  margin-top: 3rem;
-}
-
-.card {
-  margin: 1rem;
-  flex-basis: 45%;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h3 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
-} */

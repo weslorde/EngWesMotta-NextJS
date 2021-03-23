@@ -6,15 +6,11 @@ function  Destaque(props) {
 
     <div className={Estilos.DestaqueBox}>
         <div className={Estilos.DestaqueEu}>
-            <img
-            src="/Eusemfundo.png"
-            />
+            <img src="/Eusemfundo.png" />
         </div>
 
         <div className={Estilos.DestaqueLamp}>
-            <img
-            src="/Lampada.png"
-            />
+            <img src="/Lampada.png" />
         </div>
 
         <div className={Estilos.DestaqueTxt}>

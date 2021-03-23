@@ -11,9 +11,7 @@ function Projetos() {
       <div >
           <EmDesenvolvimento Pagina='Projetos'/>      
          
-      </div>
-
-      
+      </div> 
 
     )
 }

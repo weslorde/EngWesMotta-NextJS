@@ -12,7 +12,11 @@ function MyApp({ Component, pageProps }) {
       
       <div>
         <Cabecario {...pageProps} />    
-        <Component {...pageProps} />
+        <div>
+          
+          <Component {...pageProps} />
+          
+        </div>
         <Rodape {...pageProps} />
       </div>  
     );
