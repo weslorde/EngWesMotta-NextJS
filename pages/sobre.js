@@ -9,7 +9,7 @@ function Sobre() {
     return (
       
       <div >
-          <EmDesenvolvimento Pagina='Sobre'/>       
+          <EmDesenvolvimento Pagina='Sob'/>       
          
       </div>
 
